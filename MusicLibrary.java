@@ -6,7 +6,8 @@ public class MusicLibrary {
   private int currentSortField = 0;  // Unsorted
  
   public MusicLibrary() {
-    /* YOUR CONSTRUCTOR CODE HERE*/
+     this.songs = new ArrayList<Song>();
+     
   }
  
   /*
@@ -14,6 +15,7 @@ public class MusicLibrary {
    */
   public void addSong (Song song)
   {
+   songs.add(song);
   }
  
   /*
@@ -22,7 +24,7 @@ public class MusicLibrary {
    */
   public Song getSong (int num)
   {
-    return null;
+      return songs.get(num);
   }
  
   /*
@@ -30,6 +32,7 @@ public class MusicLibrary {
    */
   public void Sort ()
   {
+    Collections.sort(songs);
   }
  
   /*

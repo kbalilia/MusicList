@@ -12,8 +12,7 @@ public class MusicRunner
   {
     int count = 0;
     MusicReader mr = new MusicReader();
-    ArrayList<Song> songs = new ArrayList<Song>();
-  
+    MusicLibrary playlist = new MusicLibrary();
     mr.open("musiclist.csv");
    
     String[] data = mr.getSongData();
