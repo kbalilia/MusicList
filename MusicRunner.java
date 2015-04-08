@@ -42,7 +42,8 @@ public class MusicRunner
       
       if (type.equals("song"))
       {   
-        songs.add(song);
+        //songs.add(song);
+        playlist.addSong(song);
         count++;
       }
             
@@ -58,10 +59,11 @@ public class MusicRunner
       data = mr.getSongData();  // Get next line of song data
     }
     
+    playlist.Sort();
     
-    for( int i = songs.size()-1; i >= 0; i--)
+    for( int i = playlist.count()-1; i >= 0; i--)
     {
-      Song song = songs.get(i);
+      Song song = playlist.getSong(i);
       
       System.out.println("Artist: " + song.artist + ", Name: " + song.name + ", Year: " + song.year);
     }

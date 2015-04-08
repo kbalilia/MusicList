@@ -23,6 +23,6 @@ public class Song implements Comparable <Song>  {
     // 0 if they are equal
     // 1 if this song comes after the other song
     // compare this.name to other.name
-    return this.name.compareTo(other.name);
+    return other.name.compareTo(this.name);
   }
 }

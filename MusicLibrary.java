@@ -9,6 +9,11 @@ public class MusicLibrary {
      this.songs = new ArrayList<Song>();
      
   }
+  
+  public int count ()
+  {
+    return songs.size();
+  }
  
   /*
    * Add song to songs ArrayList
